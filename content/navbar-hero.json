@@ -1,0 +1,57 @@
+{
+  "navbar": {
+    "component": "Navbar",
+    "content": {
+      "logo": {
+        "text": "Gisselle Muñoz",
+        "className": "title text-primary-medium"
+      },
+      "links": [
+        {
+          "text": "The Work",
+          "href": "#work",
+          "className": "d-subtitle-small text-accent-dark-teal"
+        },
+        {
+          "text": "About",
+          "href": "#about",
+          "className": "d-subtitle-small text-accent-dark-teal"
+        },
+        {
+          "text": "Endorsements",
+          "href": "#endorsements",
+          "className": "d-subtitle-small text-accent-dark-teal"
+        },
+        {
+          "text": "Contact",
+          "href": "#contact",
+          "className": "d-subtitle-small text-accent-dark-teal"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "component": "Hero",
+    "content": {
+      "title": {
+        "lines": [
+          {
+            "text": "Product Designer",
+            "className": "heading text-primary-medium"
+          },
+          {
+            "text": "Problem Solver",
+            "className": "heading text-primary-medium"
+          },
+          {
+            "text": "Enthusiastic Questioner",
+            "className": "heading text-primary-medium"
+          }
+        ]
+      },
+      "background": {
+        "className": "bg-light-purple"
+      }
+    }
+  }
+}

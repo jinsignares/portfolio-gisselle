@@ -1,0 +1,74 @@
+{
+  "impactSlider": {
+    "component": "ImpactSlider",
+    "content": {
+      "slides": [
+        {
+          "id": "walmart-mexico",
+          "caseStudyId": "walmart-mexico-groceries",
+          "company": {
+            "text": "Walmart MX",
+            "className": "slider-company-badge text-white"
+          },
+          "impact": {
+            "percentage": "13%",
+            "metric": "Revenue growth",
+            "description": "on overlooked pages",
+            "cta": {
+              "text": "View Case Study",
+              "className": "slider-cta text-white underline hover:text-accent-teal transition-colors"
+            }
+          },
+          "background": {
+            "className": "bg-primary-medium"
+          }
+        },
+        {
+          "id": "ecommerce-conversion",
+          "caseStudyId": "ecommerce-optimization",
+          "company": {
+            "text": "E-Commerce Co",
+            "className": "slider-company-badge text-white"
+          },
+          "impact": {
+            "percentage": "27%",
+            "metric": "Conversion increase",
+            "description": "through strategic UX improvements",
+            "cta": {
+              "text": "View Case Study",
+              "className": "slider-cta text-white underline hover:text-accent-teal transition-colors"
+            }
+          },
+          "background": {
+            "className": "bg-primary-dark"
+          }
+        },
+        {
+          "id": "mobile-engagement",
+          "caseStudyId": "mobile-app-redesign",
+          "company": {
+            "text": "Mobile App Inc",
+            "className": "slider-company-badge text-white"
+          },
+          "impact": {
+            "percentage": "45%",
+            "metric": "User engagement",
+            "description": "boost through intuitive design",
+            "cta": {
+              "text": "View Case Study",
+              "className": "slider-cta text-white underline hover:text-accent-teal transition-colors"
+            }
+          },
+          "background": {
+            "className": "bg-accent-dark-teal"
+          }
+        }
+      ],
+      "autoplay": {
+        "enabled": true,
+        "interval": 4000,
+        "pauseOnHover": true
+      }
+    }
+  }
+}

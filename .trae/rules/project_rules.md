@@ -1,0 +1,6 @@
+- Use shadcn for all atomic components
+- Pages should not instantiate components, those should be created within a /components directory
+- All interfaces and types should be defined in a /types directory
+- This project serves the purpose of just rendering hardcoded content, this content should be defined in a /content directory in a json format that details the section and the component it is used. It should be easily legible as this is where the user will edit it.
+- use as fonts for this project https://www.fontshare.com/?q=stardom and https://www.fontshare.com/fonts/general-sans
+- use as colors for this project #1A042A, #3C037A, #11CDB7, #049797, #E9D5FF, #F8FAFC, #FFFFFF should be defined in globals css and available to use by all components

@@ -1,0 +1,60 @@
+{
+  "endorsements": {
+    "component": "Endorsements",
+    "content": {
+      "title": {
+        "text": "Endorsements",
+        "className": "heading text-primary-dark text-center mb-12"
+      },
+      "endorsements": [
+        {
+          "id": "jose-sanjuan",
+          "content": {
+            "text": "I highly recommend Gisselle to any high-performing UX design team. I've worked with Gisselle on several projects and have been blown away by her creativity and attention to detail. She is able to design intuitive, user-friendly interfaces that meet the needs of both the user and the business. Gisselle is a strategic problem-solver and an all-around team player. She has a great understanding of user experience best practices and is always willing to collaborate with others. I wouldn't hesitate to work with Gisselle again in the future and I can't recommend her enough.",
+            "className": "endorsement-content text-primary-dark"
+          },
+          "author": {
+            "name": "Jose Sanjuan",
+            "position": "Content Design Manager at Walmart Global Tech",
+            "linkedinUrl": "https://linkedin.com/in/jose-sanjuan",
+            "nameClassName": "endorsement-author text-accent-teal",
+            "positionClassName": "endorsement-author-position text-primary-dark"
+          }
+        },
+        {
+          "id": "sarah-johnson",
+          "content": {
+            "text": "Gisselle brings exceptional design thinking and user-centered approach to every project. Her ability to translate complex business requirements into elegant, intuitive designs is remarkable. She consistently delivers high-quality work while maintaining excellent collaboration with cross-functional teams.",
+            "className": "endorsement-content text-primary-dark"
+          },
+          "author": {
+            "name": "Sarah Johnson",
+            "position": "Senior Product Manager at MGM Resorts",
+            "linkedinUrl": "https://linkedin.com/in/sarah-johnson",
+            "nameClassName": "endorsement-author text-accent-teal",
+            "positionClassName": "endorsement-author-position text-primary-dark"
+          }
+        },
+        {
+          "id": "michael-chen",
+          "content": {
+            "text": "Working with Gisselle has been an absolute pleasure. Her design expertise, combined with her strategic mindset, makes her an invaluable team member. She has a unique ability to balance user needs with business objectives, resulting in designs that are both beautiful and functional.",
+            "className": "endorsement-content text-primary-dark"
+          },
+          "author": {
+            "name": "Michael Chen",
+            "position": "Lead Developer at Tech Innovations Inc",
+            "linkedinUrl": "https://linkedin.com/in/michael-chen",
+            "nameClassName": "endorsement-author text-accent-teal",
+            "positionClassName": "endorsement-author-position text-primary-dark"
+          }
+        }
+      ],
+      "autoplay": {
+        "enabled": true,
+        "interval": 5000,
+        "pauseOnHover": true
+      }
+    }
+  }
+}

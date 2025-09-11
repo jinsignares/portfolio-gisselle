@@ -1,0 +1,59 @@
+{
+  "sections": {
+    "hero": {
+      "component": "HeroSection",
+      "content": {
+        "title": {
+          "text": "Typography Demo",
+          "className": "d-mega text-primary-dark"
+        },
+        "subtitle": {
+          "text": "Showcasing Stardom and General Sans fonts",
+          "className": "d-subtitle text-primary-medium"
+        }
+      }
+    },
+    "typography_showcase": {
+      "component": "TypographyShowcase",
+      "content": {
+        "examples": [
+          {
+            "label": "D-Mega Stardom (64px desktop, 40px mobile)",
+            "text": "The quick brown fox",
+            "className": "d-mega text-accent-teal"
+          },
+          {
+            "label": "Heading Stardom (36px desktop, 30px mobile)",
+            "text": "The quick brown fox jumps",
+            "className": "heading text-primary-medium"
+          },
+          {
+            "label": "Title Stardom (30px desktop, 24px mobile)",
+            "text": "The quick brown fox jumps over",
+            "className": "title text-accent-dark-teal"
+          },
+          {
+            "label": "D-Subtitle General Sans (20px)",
+            "text": "The quick brown fox jumps over the lazy dog",
+            "className": "d-subtitle text-primary-dark"
+          },
+          {
+            "label": "D-Subtitle Small General Sans (18px)",
+            "text": "The quick brown fox jumps over the lazy dog with ease",
+            "className": "d-subtitle-small text-primary-medium"
+          },
+          {
+            "label": "Body General Sans (16px)",
+            "text": "The quick brown fox jumps over the lazy dog with remarkable ease and grace",
+            "className": "body text-primary-dark"
+          },
+          {
+            "label": "Caption General Sans (14px)",
+            "text": "The quick brown fox jumps over the lazy dog with remarkable ease and grace, demonstrating agility",
+            "className": "caption text-primary-medium"
+          }
+        ]
+      }
+    }
+  }
+}

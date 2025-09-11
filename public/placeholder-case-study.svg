@@ -1,0 +1,13 @@
+<svg width="400" height="307" viewBox="0 0 400 307" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="307" fill="#F8FAFC"/>
+  <rect x="1" y="1" width="398" height="305" stroke="#E9D5FF" stroke-width="2" stroke-dasharray="8 8"/>
+  <g transform="translate(200, 153.5)">
+    <circle cx="0" cy="-20" r="24" fill="#E9D5FF"/>
+    <path d="M-12 -32L12 -32L12 -8L-12 -8Z" fill="#3C037A"/>
+    <path d="M-8 -28L8 -28L8 -12L-8 -12Z" fill="#F8FAFC"/>
+    <circle cx="-4" cy="-20" r="2" fill="#3C037A"/>
+    <path d="M-8 -16L8 -16L6 -12L-6 -12Z" fill="#3C037A"/>
+    <text x="0" y="20" text-anchor="middle" fill="#3C037A" font-family="Arial, sans-serif" font-size="14" font-weight="500">Case Study Image</text>
+    <text x="0" y="40" text-anchor="middle" fill="#1A042A" font-family="Arial, sans-serif" font-size="12">306.5625px × Auto</text>
+  </g>
+</svg>

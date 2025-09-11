@@ -1,0 +1,142 @@
+{
+  "theWork": {
+    "component": "TheWork",
+    "content": {
+      "title": {
+        "text": "The Work",
+        "className": "heading text-primary-dark text-center mb-4"
+      },
+      "subtitle": {
+        "text": "I strive to create impactful experiences by aligning customer needs with business objectives and technology.",
+        "className": "d-subtitle text-primary-dark text-center mb-12 max-w-3xl mx-auto"
+      },
+      "caseStudies": [
+        {
+          "id": "mgm-rewards-redesign",
+          "image": {
+            "src": "/placeholder-case-study.svg",
+            "alt": "MGM Rewards Experience Redesign",
+            "className": "w-full h-77 object-cover rounded-lg mb-6"
+          },
+          "company": {
+            "text": "MGM Resorts",
+            "className": "case-study-company-badge text-primary-dark"
+          },
+          "title": {
+            "text": "MGM Rewards Experience Redesign",
+            "className": "case-study-title text-primary-dark"
+          },
+          "description": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+            "className": "case-study-description text-primary-dark"
+          },
+          "link": {
+            "text": "Read Case Study",
+            "href": "/case-study/mgm-rewards-redesign",
+            "className": "case-study-link text-primary-medium hover:text-accent-teal transition-colors"
+          }
+        },
+        {
+          "id": "loyalty-gamification",
+          "image": {
+            "src": "/placeholder-case-study.svg",
+            "alt": "Loyalty Gamification Challenges",
+            "className": "w-full h-77 object-cover rounded-lg mb-6"
+          },
+          "company": {
+            "text": "MGM Resorts",
+            "className": "case-study-company-badge text-primary-dark"
+          },
+          "title": {
+            "text": "Loyalty Gamification Challenges",
+            "className": "case-study-title text-primary-dark"
+          },
+          "description": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+            "className": "case-study-description text-primary-dark"
+          },
+          "link": {
+            "text": "Read Case Study",
+            "href": "/case-study/loyalty-gamification",
+            "className": "case-study-link text-primary-medium hover:text-accent-teal transition-colors"
+          }
+        },
+        {
+          "id": "product-page-redesign",
+          "image": {
+            "src": "/placeholder-case-study.svg",
+            "alt": "Product Page Redesign",
+            "className": "w-full h-77 object-cover rounded-lg mb-6"
+          },
+          "company": {
+            "text": "Walmart CA",
+            "className": "case-study-company-badge text-primary-dark"
+          },
+          "title": {
+            "text": "Product Page Redesign",
+            "className": "case-study-title text-primary-dark"
+          },
+          "description": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+            "className": "case-study-description text-primary-dark"
+          },
+          "link": {
+            "text": "Read Case Study",
+            "href": "/case-study/product-page-redesign",
+            "className": "case-study-link text-primary-medium hover:text-accent-teal transition-colors"
+          }
+        },
+        {
+          "id": "project-name",
+          "image": {
+            "src": "/placeholder-case-study.svg",
+            "alt": "Project name",
+            "className": "w-full h-77 object-cover rounded-lg mb-6"
+          },
+          "company": {
+            "text": "Project Inc",
+            "className": "case-study-company-badge text-primary-dark"
+          },
+          "title": {
+            "text": "Project name",
+            "className": "case-study-title text-primary-dark"
+          },
+          "description": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+            "className": "case-study-description text-primary-dark"
+          },
+          "link": {
+            "text": "Read Case Study",
+            "href": "/case-study/project-name",
+            "className": "case-study-link text-primary-medium hover:text-accent-teal transition-colors"
+          }
+        },
+        {
+          "id": "walmart-product-page",
+          "image": {
+            "src": "/placeholder-case-study.svg",
+            "alt": "Product Page Redesign",
+            "className": "w-full h-77 object-cover rounded-lg mb-6"
+          },
+          "company": {
+            "text": "Walmart CA",
+            "className": "case-study-company-badge text-primary-dark"
+          },
+          "title": {
+            "text": "Product Page Redesign",
+            "className": "case-study-title text-primary-dark"
+          },
+          "description": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+            "className": "case-study-description text-primary-dark"
+          },
+          "link": {
+            "text": "Read Case Study",
+            "href": "/case-study/walmart-product-page",
+            "className": "case-study-link text-primary-medium hover:text-accent-teal transition-colors"
+          }
+        }
+      ]
+    }
+  }
+}

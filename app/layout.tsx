@@ -1,15 +1,46 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+// Load Stardom font
+const stardom = localFont({
+  src: [
+    {
+      path: '../fonts/Stardom_Complete/Fonts/WEB/fonts/Stardom-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-stardom',
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// Load General Sans font with multiple weights
+const generalSans = localFont({
+  src: [
+    {
+      path: '../fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Medium.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Semibold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/GeneralSans_Complete/Fonts/WEB/fonts/GeneralSans-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-general-sans',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -24,9 +55,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${stardom.variable} ${generalSans.variable} antialiased`}>
         {children}
       </body>
     </html>

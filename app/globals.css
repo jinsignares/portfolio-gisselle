@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
 :root {
+  /* Project Colors */
+  --color-primary-dark: #1A042A;
+  --color-primary-medium: #3C037A;
+  --color-accent-teal: #11CDB7;
+  --color-accent-dark-teal: #049797;
+  --color-light-purple: #E9D5FF;
+  --color-light-gray: #F8FAFC;
+  --color-white: #FFFFFF;
+
+  /* Legacy colors for compatibility */
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -8,8 +18,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-stardom: var(--font-stardom);
+  --font-general-sans: var(--font-general-sans);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +32,240 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-general-sans);
+}
+
+/* Typography Classes - Stardom Font */
+.d-mega {
+  font-family: var(--font-stardom);
+  font-size: 4rem;
+  /* 64px */
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.heading {
+  font-family: var(--font-stardom);
+  font-size: 6.25rem;
+  /* 100px */
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.title {
+  font-family: var(--font-stardom);
+  font-size: 1.875rem;
+  /* 30px */
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+/* Custom height for case study images */
+.h-77 {
+  height: 19.25rem; /* 308px - close to 306.5625px requirement */
+}
+
+/* Endorsement Typography */
+.endorsement-content {
+  font-family: var(--font-general-sans);
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.endorsement-author {
+  font-family: var(--font-stardom);
+  font-size: 1.5rem; /* 24px */
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.endorsement-author-position {
+  font-family: var(--font-general-sans);
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+/* Case Study Card Typography */
+.case-study-company-badge {
+  font-family: var(--font-general-sans);
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0;
+  background-color: rgba(233, 213, 255, 0.5); /* #E9D5FF at 50% opacity */
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+.case-study-title {
+  font-family: var(--font-stardom);
+  font-size: 1.875rem; /* 30px */
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.case-study-description {
+  font-family: var(--font-general-sans);
+  font-size: 1.25rem; /* 20px */
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.case-study-link {
+  font-family: var(--font-general-sans);
+  font-size: 1rem; /* 16px */
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+/* Slider-specific typography */
+.slider-company-badge {
+  font-family: var(--font-general-sans);
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.4;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+.slider-metric {
+  font-family: var(--font-stardom);
+  font-size: 1.875rem; /* 30px */
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.slider-description {
+  font-family: var(--font-general-sans);
+  font-size: 1rem; /* 16px */
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.slider-cta {
+  font-family: var(--font-general-sans);
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* Typography Classes - General Sans Font */
+.d-subtitle {
+  font-family: var(--font-general-sans);
+  font-size: 1.25rem;
+  /* 20px */
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.d-subtitle-small {
+  font-family: var(--font-general-sans);
+  font-size: 1.125rem;
+  /* 18px */
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.body {
+  font-family: var(--font-general-sans);
+  font-size: 1rem;
+  /* 16px */
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.caption {
+  font-family: var(--font-general-sans);
+  font-size: 0.875rem;
+  /* 14px */
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* Mobile Responsive Typography */
+@media (max-width: 768px) {
+  .d-mega {
+    font-size: 2.5rem;
+    /* 40px */
+  }
+
+  .heading {
+    font-size: 3.4375rem;
+    /* 30px */
+  }
+
+  .title {
+    font-size: 1.5rem;
+    /* 24px */
+  }
+}
+
+/* Color Utility Classes */
+.text-primary-dark {
+  color: var(--color-primary-dark);
+}
+
+.text-primary-medium {
+  color: var(--color-primary-medium);
+}
+
+.text-accent-teal {
+  color: var(--color-accent-teal);
+}
+
+.text-accent-dark-teal {
+  color: var(--color-accent-dark-teal);
+}
+
+.text-light-purple {
+  color: var(--color-light-purple);
+}
+
+.text-light-gray {
+  color: var(--color-light-gray);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.bg-primary-dark {
+  background-color: var(--color-primary-dark);
+}
+
+.bg-primary-medium {
+  background-color: var(--color-primary-medium);
+}
+
+.bg-accent-teal {
+  background-color: var(--color-accent-teal);
+}
+
+.bg-accent-dark-teal {
+  background-color: var(--color-accent-dark-teal);
+}
+
+.bg-light-purple {
+  background-color: var(--color-light-purple);
+}
+
+.bg-light-gray {
+  background-color: var(--color-light-gray);
+}
+
+.bg-white {
+  background-color: var(--color-white);
 }
