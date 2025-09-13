@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
 interface Phase {
@@ -29,6 +30,38 @@ export default function ProcessPhases({
   phases, 
   backgroundColor = 'white' 
 }: ProcessPhasesProps) {
+  const [visibleImages, setVisibleImages] = useState<Set<string>>(new Set());
+  const imageRefs = useRef<{ [key: string]: HTMLDivElement | null }>({});
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const phaseId = entry.target.getAttribute('data-phase-id');
+            if (phaseId) {
+              setVisibleImages(prev => new Set([...prev, phaseId]));
+            }
+          }
+        });
+      },
+      {
+        threshold: 0.3,
+        rootMargin: '0px 0px -100px 0px'
+      }
+    );
+
+    Object.values(imageRefs.current).forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => {
+      Object.values(imageRefs.current).forEach((ref) => {
+        if (ref) observer.unobserve(ref);
+      });
+    };
+  }, [phases]);
+
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor }}>
       <div className="max-w-6xl mx-auto">
@@ -44,15 +77,21 @@ export default function ProcessPhases({
         {phases.map((phase, index) => (
           <div key={phase.id} className={`grid grid-cols-1 lg:grid-cols-2 items-center h-auto md:h-[418px] gap-6 lg:gap-0 ${index < phases.length - 1 ? 'mb-12 md:mb-0' : ''}`}>
             {/* Image */}
-            <div className={`h-64 lg:h-full bg-[#f4f4f4] items-center flex justify-center order-1 ${
-              phase.imagePosition === 'right' ? 'lg:order-2' : 'lg:order-1'
-            }`}>
+            <div 
+              ref={(el) => { imageRefs.current[phase.id] = el; }}
+              data-phase-id={phase.id}
+              className={`h-64 lg:h-full bg-[#f4f4f4] items-center flex justify-center order-1 ${
+                phase.imagePosition === 'right' ? 'lg:order-2' : 'lg:order-1'
+              }`}
+            >
               <Image 
                 src={phase.image.src}
                 alt={phase.image.alt}
                 width={phase.image.width}
                 height={phase.image.height}
-                className="w-full h-full object-contain"
+                className={`w-full h-full object-contain ${
+                  visibleImages.has(phase.id) ? 'animate-fade-in-up' : 'opacity-0'
+                }`}
               />
             </div>
             

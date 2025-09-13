@@ -34,7 +34,7 @@ export default function CaseStudyHero({ title, subtitle, heroImage }: CaseStudyH
             alt={heroImage.alt}
             width={heroImage.width}
             height={heroImage.height}
-            className="w-full max-w-4xl mx-auto rounded-lg"
+            className="w-full max-w-4xl mx-auto rounded-lg animate-fade-in-up"
             priority
           />
         </div>
