@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import navbarHeroContent from '../content/navbar-hero.json';
+import Link from 'next/link';
 
 interface NavbarProps {
   showBackButton?: boolean;
@@ -112,9 +113,9 @@ export default function Navbar({ showBackButton = false }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-6">
           {/* Logo */}
-          <div className={navbar.content.logo.className}>
+          <Link href="/" className={navbar.content.logo.className}>
             {navbar.content.logo.text}
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">

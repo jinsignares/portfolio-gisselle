@@ -1,0 +1,213 @@
+{
+  "hero": {
+    "title": "Turning Reorders into Revenue",
+    "subtitle": "Complete experience redesign of Walmart's e-commerce repurchase features (Favorites, Recently ordered, and Lists) for the Mexico market.",
+    "heroImage": {
+      "src": "https://fhwbwuvdvciwi1ix.public.blob.vercel-storage.com/Case%20Studies/Walmart%20Mexico/image%201.png",
+      "alt": "Walmart Mexico mobile app interfaces showing repurchase features",
+      "width": 1200,
+      "height": 600
+    }
+  },
+  "problemDiscovery": {
+    "problem": {
+      "title": "The Problem",
+      "content": [
+        "People rely heavily on search and browse features to build their carts. The former means they overspend time searching for recurring items and repeatedly add them to their cart.",
+        "The challenge had two main goals: increasing the Add to Cart (ATC) rates from the repurchase pages, and the second was to reduce the number of steps and time a returning customer spends building a basket."
+      ],
+      "objectives": {
+        "title": "The Objectives(KPI)",
+        "items": [
+          "Increase the Add to Cart (ATC) rates from the repurchase pages",
+          "Reduce the number of steps and time a returning customer spends building a basket."
+        ]
+      }
+    },
+    "discovery": {
+      "title": "The Discovery",
+      "content": "Along with the research team, moderated usability studies and Participatory Design sessions were conducted with new and existing users, as well as competitors' users from Mexico City and Puebla, aged 25-45. The objective was to analyze how customers approach the repurchase process and assess the relevance and usability of existing rapid basket-building features, such as favorites, lists, and order history.",
+      "keyFindings": {
+        "title": "Key Findings",
+        "items": [
+          "The users were unaware of the features that allowed them to build their cart quickly, didn't know how to use them, nor their value.",
+          "Likewise, users wanted these features to stand out early through color, location, onboarding activation, and making the experience playful, which would prompt them to use these features more frequently.",
+          "Regarding the recently ordered items, customers have expressed a desire to see the reorder feature made more visible and allocated a dedicated section for quick access."
+        ]
+      }
+    },
+    "backgroundColor": "#F8FAFC"
+  },
+  "userQuote": {
+    "quote": "The Walmart app is too plain; you have to take a closer look at everything, is boring... looks more like a website than an app",
+    "attribution": "Laura, age 32, Walmart grocery app user.",
+    "backgroundColor": "#E9D5FF",
+    "quoteIcon": "/quote-medium.svg"
+  },
+  "processPhases": {
+    "sectionTitle": "The Process",
+    "sectionSubtitle": "Complete experience redesign of Walmart's e-commerce repurchase features (Favorites, Recently ordered, and Lists) for the Mexico market.",
+    "phases": [
+      {
+        "id": "phase-1",
+        "title": "Phase 1:",
+        "subtitle": "Increase discoverability of repurchase features",
+        "content": "Along with the research team, moderated usability studies and Participatory Design sessions were conducted with new and existing users, as well as competitors' users from Mexico City and Puebla, aged 25-45. The objective was to analyze how customers approach the repurchase process and assess the relevance and usability of existing rapid basket-building features, such as favorites, lists, and order history.",
+        "image": {
+          "src": "https://fhwbwuvdvciwi1ix.public.blob.vercel-storage.com/Case%20Studies/Walmart%20Mexico/Frame%2073.png",
+          "alt": "Phase 1: Mobile app interface showing repurchase features",
+          "width": 400,
+          "height": 600
+        },
+        "imagePosition": "left"
+      },
+      {
+        "id": "phase-2",
+        "title": "Phase 2:",
+        "subtitle": "Complete redesign of Favorites, Recent orders, and Lists",
+        "content": "I designed two different approaches and tested them with loyal customers. <strong>Design A(left)</strong> consisted of using tabs for Recently Ordered Items and Lists, where we included favorites within the same hierarchy. Ultimately, users preferred <strong>Design B</strong>, claiming it was better organized and easier to access. We also renamed the section \"Tus Productos\" (Your Items), which included all the things users would be interested in buying again.",
+        "image": {
+          "src": "https://fhwbwuvdvciwi1ix.public.blob.vercel-storage.com/Case%20Studies/Walmart%20Mexico/Frame%2073-1.png",
+          "alt": "Phase 2: Mobile app redesign comparison showing Design A and Design B",
+          "width": 600,
+          "height": 400
+        },
+        "imagePosition": "right"
+      },
+      {
+        "id": "phase-3",
+        "title": "Phase 3:",
+        "subtitle": "Let's educate our customers!",
+        "content": "The users were unaware of the purpose of having Lists and Favorites. Therefore, they weren't using them. So in phase 3, we decided to repurpose the empty states and include educational content on them.<br><br>We redesigned them to provide content and use it to communicate the value of the features.<br><br>See the before (in gray) and the after (colorized).",
+        "image": {
+          "src": "https://fhwbwuvdvciwi1ix.public.blob.vercel-storage.com/Case%20Studies/Walmart%20Mexico/Frame%2073-2.png",
+          "alt": "Phase 3: Mobile app educational screens and onboarding flow",
+          "width": 600,
+          "height": 400
+        },
+        "imagePosition": "left"
+      }
+    ],
+    "backgroundColor": "white"
+  },
+  "designPrinciples": {
+    "sectionTitle": "Design principles",
+    "sectionSubtitle": "Based on the initial problem, the insights gained, and the goals, I established the principles that would guide the experience and inform decision-making.",
+    "principles": [
+      {
+        "id": "educational",
+        "title": "Educational",
+        "description": "Communicate with the users about the features at every step or whenever there is the potential to do so.",
+        "icon": {
+          "src": "/school.svg",
+          "alt": "Educational principle icon",
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "visual",
+        "title": "Visual",
+        "description": "The Visual Design should be joyful, as it also needs to motivate the user to come back.",
+        "icon": {
+          "src": "/diamond_shine.svg",
+          "alt": "Visual principle icon",
+          "width": 32,
+          "height": 32
+        }
+      },
+      {
+        "id": "personalized",
+        "title": "Personalized",
+        "description": "The experience should be tailored to the users' purchase patterns.",
+        "icon": {
+          "src": "/straighten.svg",
+          "alt": "Personalized principle icon",
+          "width": 32,
+          "height": 32
+        }
+      }
+    ],
+    "backgroundColor": "#E9D5FF"
+  },
+  "designCarousel": {
+    "sectionTitle": "The Designs",
+    "images": [
+      {
+        "id": "carousel-0",
+        "src": "https://fhwbwuvdvciwi1ix.public.blob.vercel-storage.com/Case%20Studies/Walmart%20Mexico/carousel0.png",
+        "alt": "Mobile app design 1",
+        "width": 300,
+        "height": 600
+      },
+      {
+        "id": "carousel-1",
+        "src": "https://fhwbwuvdvciwi1ix.public.blob.vercel-storage.com/Case%20Studies/Walmart%20Mexico/carousel1.png",
+        "alt": "Mobile app design 2",
+        "width": 300,
+        "height": 600
+      },
+      {
+        "id": "carousel-2",
+        "src": "https://fhwbwuvdvciwi1ix.public.blob.vercel-storage.com/Case%20Studies/Walmart%20Mexico/carousel2.png",
+        "alt": "Desktop design",
+        "width": 500,
+        "height": 400
+      },
+      {
+        "id": "carousel-3",
+        "src": "https://fhwbwuvdvciwi1ix.public.blob.vercel-storage.com/Case%20Studies/Walmart%20Mexico/carousel3.png",
+        "alt": "Additional design",
+        "width": 300,
+        "height": 600
+      },
+      {
+        "id": "carousel-4",
+        "src": "https://fhwbwuvdvciwi1ix.public.blob.vercel-storage.com/Case%20Studies/Walmart%20Mexico/carousel4.png",
+        "alt": "Mobile design 3",
+        "width": 300,
+        "height": 600
+      },
+      {
+        "id": "carousel-5",
+        "src": "https://fhwbwuvdvciwi1ix.public.blob.vercel-storage.com/Case%20Studies/Walmart%20Mexico/carousel5.png",
+        "alt": "Mobile design 4",
+        "width": 300,
+        "height": 600
+      }
+    ],
+    "autoScroll": true,
+    "scrollSpeed": 1,
+    "backgroundColor": "white"
+  },
+  "resultsTeam": {
+    "results": {
+      "title": "The Results",
+      "metrics": [
+        {
+          "id": "page-visits",
+          "title": "Page visits grew",
+          "value": "From 772K → 1.9M",
+          "description": "in 8 months."
+        },
+        {
+          "id": "add-to-cart",
+          "title": "Add to Cart actions surged",
+          "value": "From 313K → 1.5M",
+          "description": "in the same period"
+        },
+        {
+          "id": "revenue-share",
+          "title": "Revenue share from repurchase pages jumped",
+          "value": "From 3.64% → 5.99%",
+          "description": ""
+        }
+      ]
+    },
+    "team": {
+      "title": "The Team",
+      "description": "I collaborated with a product manager, a researcher, a content strategist, and engineers on this project. We thoroughly examined the problem, identified user pain points, and explored and implemented effective solutions."
+    },
+    "backgroundColor": "white"
+  }
+}

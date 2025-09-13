@@ -8,7 +8,11 @@
           "caseStudyId": "walmart-mexico-groceries",
           "company": {
             "text": "Walmart MX",
-            "className": "slider-company-badge text-white"
+            "className": "slider-company-badge text-primary-dark",
+            "style": {
+              "backgroundColor": "#C2EBD3",
+              "borderRadius": "4px"
+            }
           },
           "impact": {
             "percentage": "13%",
@@ -24,43 +28,75 @@
           }
         },
         {
-          "id": "ecommerce-conversion",
-          "caseStudyId": "ecommerce-optimization",
+          "id": "walmart-canada",
+          "caseStudyId": "walmart-canada-atc",
           "company": {
-            "text": "E-Commerce Co",
-            "className": "slider-company-badge text-white"
+            "text": "Walmart CA",
+            "className": "slider-company-badge text-primary-dark",
+            "style": {
+              "backgroundColor": "#CAE8FF",
+              "borderRadius": "4px"
+            }
           },
           "impact": {
-            "percentage": "27%",
-            "metric": "Conversion increase",
-            "description": "through strategic UX improvements",
+            "percentage": "6.9%",
+            "metric": "increase in ATC",
+            "description": "after product page redesign",
             "cta": {
               "text": "View Case Study",
               "className": "slider-cta text-white underline hover:text-accent-teal transition-colors"
             }
           },
           "background": {
-            "className": "bg-primary-dark"
+            "className": "bg-primary-medium"
           }
         },
         {
-          "id": "mobile-engagement",
-          "caseStudyId": "mobile-app-redesign",
+          "id": "mgm-bounce-rate",
+          "caseStudyId": "mgm-rewards-redesign",
           "company": {
-            "text": "Mobile App Inc",
-            "className": "slider-company-badge text-white"
+            "text": "MGM Resorts",
+            "className": "slider-company-badge text-primary-dark",
+            "style": {
+              "backgroundColor": "#FFECDE",
+              "borderRadius": "4px"
+            }
           },
           "impact": {
-            "percentage": "45%",
-            "metric": "User engagement",
-            "description": "boost through intuitive design",
+            "percentage": "0.2%",
+            "metric": "bounce rate reduction",
+            "description": "after Rewards experience redesign",
             "cta": {
               "text": "View Case Study",
               "className": "slider-cta text-white underline hover:text-accent-teal transition-colors"
             }
           },
           "background": {
-            "className": "bg-accent-dark-teal"
+            "className": "bg-primary-medium"
+          }
+        },
+        {
+          "id": "mgm-delivery",
+          "caseStudyId": "mgm-component-library",
+          "company": {
+            "text": "MGM Resorts",
+            "className": "slider-company-badge text-primary-dark",
+            "style": {
+              "backgroundColor": "#FFECDE",
+              "borderRadius": "4px"
+            }
+          },
+          "impact": {
+            "percentage": "50%",
+            "metric": "faster delivery",
+            "description": "through a scalable component library",
+            "cta": {
+              "text": "View Case Study",
+              "className": "slider-cta text-white underline hover:text-accent-teal transition-colors"
+            }
+          },
+          "background": {
+            "className": "bg-primary-medium"
           }
         }
       ],

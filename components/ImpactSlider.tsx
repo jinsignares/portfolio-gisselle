@@ -51,25 +51,21 @@ export default function ImpactSlider() {
 
   // Animation variants
   const slideVariants = {
-    enter: (direction: number) => ({
-      x: direction > 0 ? 1000 : -1000,
+    enter: {
       opacity: 0
-    }),
+    },
     center: {
       zIndex: 1,
-      x: 0,
       opacity: 1
     },
-    exit: (direction: number) => ({
+    exit: {
       zIndex: 0,
-      x: direction < 0 ? 1000 : -1000,
       opacity: 0
-    })
+    }
   };
 
   const slideTransition = {
-    x: { type: 'spring' as const, stiffness: 300, damping: 30 },
-    opacity: { duration: 0.2 }
+    opacity: { duration: 0.4, ease: 'easeInOut' as const }
   };
 
   const currentSlideData = content.slides[currentSlide];
@@ -77,27 +73,33 @@ export default function ImpactSlider() {
   return (
     <section 
       className="relative min-h-[220px] py-10 overflow-hidden"
+      style={{
+        background: 'linear-gradient(135deg, #3C037A 0%, #000000 100%)'
+      }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <AnimatePresence mode="wait" custom={1}>
+      <div className="absolute inset-0 overflow-hidden">
+      <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
-          custom={1}
           variants={slideVariants}
           initial="enter"
           animate="center"
           exit="exit"
           transition={slideTransition}
-          className={`absolute inset-0 flex items-center justify-center ${currentSlideData.background.className}`}
+          className="absolute inset-0 flex items-center justify-center"
         >
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
             {/* Company Badge */}
-            {currentSlideData.company && (
-              <div className={`${currentSlideData.company.className} mb-2`}>
-                {currentSlideData.company.text}
-              </div>
-            )}
+              {currentSlideData.company && (
+                <div 
+                  className={`${currentSlideData.company.className} mb-4`}
+                  style={currentSlideData.company.style || {}}
+                >
+                  {currentSlideData.company.text}
+                </div>
+              )}
             
             {/* Impact Percentage */}
             <div className="flex justify-center items-center space-x-2">
@@ -152,12 +154,12 @@ export default function ImpactSlider() {
       </button>
 
       {/* Dot Indicators */}
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
         {content.slides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+            className={`w-1 h-1 rounded-full transition-all duration-300 ${
               index === currentSlide 
                 ? 'bg-white scale-110' 
                 : 'bg-white/50 hover:bg-white/70'
@@ -165,6 +167,7 @@ export default function ImpactSlider() {
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
+      </div>
       </div>
     </section>
   );

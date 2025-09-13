@@ -12,27 +12,27 @@
       },
       "caseStudies": [
         {
-          "id": "mgm-rewards-redesign",
+          "id": "walmart-mexico-redesign",
           "image": {
-            "src": "/placeholder-case-study.svg",
-            "alt": "MGM Rewards Experience Redesign",
+            "src": "https://fhwbwuvdvciwi1ix.public.blob.vercel-storage.com/Case%20Studies/Walmart%20Mexico/Image%20%281%29.png",
+            "alt": "Turning Reorders into Revenue: Redesign for Walmart Mexico",
             "className": "w-full h-77 object-cover rounded-lg mb-6"
           },
           "company": {
-            "text": "MGM Resorts",
+            "text": "Walmart MX",
             "className": "case-study-company-badge text-primary-dark"
           },
           "title": {
-            "text": "MGM Rewards Experience Redesign",
+            "text": "Turning Reorders into Revenue: Redesign for Walmart Mexico",
             "className": "case-study-title text-primary-dark"
           },
           "description": {
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+            "text": "Redesigning Walmart MX's repurchase features increased engagement, cart additions, and revenue by transforming hidden features into growth drivers.",
             "className": "case-study-description text-primary-dark"
           },
           "link": {
             "text": "Read Case Study",
-            "href": "/case-study/mgm-rewards-redesign",
+            "href": "/case-studies/walmart-mexico",
             "className": "case-study-link text-primary-medium hover:text-accent-teal transition-colors"
           }
         },

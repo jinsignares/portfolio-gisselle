@@ -115,11 +115,6 @@ export default function TheWork() {
               <a 
                 href={caseStudy.link.href}
                 className={caseStudy.link.className}
-                onClick={(e) => {
-                  e.preventDefault();
-                  // TODO: Navigate to case study page
-                  console.log('Navigate to case study:', caseStudy.id);
-                }}
               >
                 {caseStudy.link.text} →
               </a>

@@ -23,7 +23,57 @@ All notable changes to this project will be documented in this file.
     - Case study link
   - Cleaned up content JSON structure by removing unnecessary title field
 
+### Changed
+- **Impact Slider Background**
+  - Added stationary gradient background from #3C037A to #000000
+  - Moved background styling from individual slides to section container
+  - Only text content now slides while background remains fixed
+  - Removed individual slide background classes for unified appearance
+  - Maintained smooth sliding animations for content only
+
+### Fixed
+- **Impact Slider Animation**
+  - Eliminated black fade effect between slide transitions
+  - Restored x-axis slide animations with improved timing
+  - Changed AnimatePresence mode to 'popLayout' for seamless transitions
+  - Set opacity to 1 throughout animation to prevent fade to black
+  - Maintained smooth sliding motion with spring physics
+  - Preserved autoplay functionality and user controls
+  - **Fixed slide visibility and centering**: Switched to opacity-only transitions to eliminate positioning issues
+  - Removed x-axis animations that caused previous slides to remain visible
+  - Ensured instant centering with no delay using opacity fade transitions
+  - Added additional overflow container for extra content clipping
+  - Completely eliminated previous slide visibility on screen edges
+
+### Changed
+- **Impact Slider Content Updates**
+  - Updated all four slides to match the provided design specifications
+  - **Walmart MX**: 13% Revenue growth on overlooked pages
+  - **Walmart CA**: 6.9% increase in ATC after product page redesign
+  - **MGM Resorts**: 0.2% bounce rate reduction after Rewards experience redesign
+  - **MGM Resorts**: 50% faster delivery through scalable component library
+  - Unified background color to `bg-primary-medium` for all slides
+  - **Company Badge Styling Updates**:
+    - **Walmart MX**: Light green background (#C2EBD3)
+    - **Walmart CA**: Light blue background (#CAE8FF)
+    - **MGM Resorts** (both slides): Light orange background (#FFECDE)
+    - All badges use dark text color (#1A042A) and 4px border radius
+    - Updated component to support inline styles from JSON content
+  - Maintained autoplay functionality and smooth transitions
+  - Updated case study IDs to match new content structure
+
 ### Added
+- **Walmart Mexico Case Study**
+  - Created first real case study page under `/case-studies/walmart-mexico` route
+  - Updated The Work section with real Walmart Mexico project data
+  - Added actual case study thumbnail from Vercel storage
+  - **Case Study Content**: "Turning Reorders into Revenue: Redesign for Walmart Mexico"
+  - **Real Description**: Detailed project overview with actual business impact
+  - **Results Metrics**: 13% revenue growth, 45% increased engagement, 32% more cart additions
+  - **Complete Page Structure**: Hero section, overview, challenge, solution, results, and process
+  - **Navigation Integration**: Direct linking from The Work cards to case study pages
+  - **Responsive Design**: Full mobile and desktop compatibility
+
 - **Enhanced Navigation Features**
   - **Smooth Scrolling**: Added smooth scroll behavior to all navbar and footer links
   - **Dynamic Navbar Background**: Navbar transitions from transparent to solid white with shadow on scroll
